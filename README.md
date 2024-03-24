@@ -2,6 +2,9 @@
 
 A spec conformant implementation of [`typeid`](https://github.com/jetpack-io/typeid) in Dart.
 
+![GitHub License](https://img.shields.io/github/license/tbd54566975/typeid-dart) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/tbd54566975/typeid-dart/ci.yaml)
+
+
 ## Usage
 
 ### ID Generation
