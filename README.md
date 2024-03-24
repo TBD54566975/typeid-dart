@@ -1,6 +1,6 @@
 # Dart TypeID
 
-An implementation of [`typeid`](https://github.com/jetpack-io/typeid) in Dart.
+A spec conformant implementation of [`typeid`](https://github.com/jetpack-io/typeid) in Dart.
 
 ## Usage
 
