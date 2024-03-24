@@ -1,0 +1,3 @@
+[submodule "typeid"]
+	path = typeid
+	url = git@github.com:jetpack-io/typeid.git
