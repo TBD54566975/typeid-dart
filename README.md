@@ -4,6 +4,8 @@ A spec conformant implementation of [`typeid`](https://github.com/jetpack-io/typ
 
 ![GitHub License](https://img.shields.io/github/license/tbd54566975/typeid-dart) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/tbd54566975/typeid-dart/ci.yaml)
 
+> [!NOTE]
+> This repo contains the [typeid](https://github.com/jetpack-io/typeid) repo as a submodule to reflect which version of the spec has been implemented and to maintain a single source of truth for [test vectors](https://github.com/jetpack-io/typeid/tree/main/spec#validating-implementations)
 
 ## Usage
 
