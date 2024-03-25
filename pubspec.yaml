@@ -1,6 +1,6 @@
 name: typeid
 description: A spec conformant implementation of the TypeID standard. TypeIDs are K-sortable, globally unique identifier inspired by Stripe IDs
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/TBD54566975/typeid-dart
 
 environment:
