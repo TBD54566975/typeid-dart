@@ -1,5 +1,5 @@
 name: typeid
-description: A starting point for Dart libraries or applications.
+description: A spec conformant implementation of the TypeID standard.
 version: 1.0.0
 repository: https://github.com/TBD54566975/typeid-dart
 
