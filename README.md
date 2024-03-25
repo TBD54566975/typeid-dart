@@ -13,7 +13,7 @@ This package is available and can be consumed via [pub.dev](https://pub.dev/pack
 
 ### ID Generation
 ```dart
-import 'package:typeid/lib/typeid.dart';
+import 'package:typeid/typeid.dart';
 
 void main() {
   final id = TypeId.generate('user');
@@ -23,7 +23,7 @@ void main() {
 
 ### Decoding
 ```dart
-import 'package:typeid/lib/typeid.dart';
+import 'package:typeid/typeid.dart';
 
 void main() {
   final id = TypeId.decode('user_01hsq6r6amekxrefpecdfp561f');

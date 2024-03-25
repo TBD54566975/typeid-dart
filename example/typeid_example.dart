@@ -1,4 +1,4 @@
-import 'package:typeid/src/typeid.dart';
+import 'package:typeid/typeid.dart';
 
 void main() {
   final id = TypeId.generate('user');
