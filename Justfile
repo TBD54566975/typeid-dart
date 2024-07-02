@@ -1,3 +1,6 @@
+_help:
+  @just -l
+
 get:
   @dart pub get
 
