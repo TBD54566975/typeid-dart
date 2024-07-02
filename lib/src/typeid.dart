@@ -26,7 +26,7 @@ class TypeId {
   /// Decodes a TypeID into a [DecodedTypeId]. Throws [FormatException] if
   /// the provided TypeID is invalid
   static DecodedTypeId decode(String typeid) {
-    final parts = typeid.split(separator);
+    final parts = _splitLast(typeid, separator);
 
     if (parts.length == 1) {
       parts.insert(0, '');
@@ -59,10 +59,27 @@ class TypeId {
       throw FormatException('Prefix too long');
     }
 
-    // ensure all characters fall within [a-z]
-    final isValid = prefix.runes.every((code) => code > 96 && code < 123);
+    if (prefix.startsWith(separator) || prefix.endsWith(separator)) {
+      throw FormatException('Prefix cannot start or end with $separator');
+    }
+
+    // ensure all characters fall within [a-z_]
+    final isValid =
+        prefix.runes.every((code) => (code > 96 && code < 123) || code == 95);
+
     if (!isValid) {
       throw FormatException('prefix must only contain lowercase letters [a-z]');
     }
+  }
+
+  static List<String> _splitLast(String input, String delimiter) {
+    int lastIndex = input.lastIndexOf(delimiter);
+    if (lastIndex == -1) {
+      // Delimiter not found, return the input as a single element list
+      return [input];
+    }
+    String beforeLast = input.substring(0, lastIndex);
+    String afterLast = input.substring(lastIndex + delimiter.length);
+    return [beforeLast, afterLast];
   }
 }
